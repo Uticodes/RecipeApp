@@ -77,7 +77,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/movie_tagline" />
+                app:layout_constraintTop_toBottomOf="@+id/recipe_tagline" />
 
             <ImageView
                 android:id="@+id/recipe_poster"
@@ -93,7 +93,7 @@
 
 
             <TextView
-                android:id="@+id/movie_tagline"
+                android:id="@+id/recipe_tagline"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
