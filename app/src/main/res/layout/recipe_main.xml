@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:background="#24D2BD"
+    app:layout_behavior="com.google.material.appbar.AppBarLayout.ScrollingViewBehavior"
+    tools:context="com.example.yutee.recipeapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:id="@+id/rv_view">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void doLogIn(){
         if(!validate()) {
-            Toast.makeText(this, "mistake", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Incorrect email or password", Toast.LENGTH_SHORT).show();
             return;
         }
         Intent intent = new Intent(this, MainActivity.class);

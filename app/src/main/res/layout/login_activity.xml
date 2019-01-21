@@ -8,7 +8,8 @@
     android:paddingLeft="16dp"
     android:paddingBottom="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/bckg"
+
+    android:background="@drawable/bkm"
     tools:context = "com.example.yutee.recipeapp.LoginActivity">
 
     <EditText
@@ -26,10 +27,22 @@
         android:textColor="#FFFFFF"
         android:textColorHint="@color/cardview_light_background"
         tools:textColorLink="@color/cardview_light_background" />
-    <Button
-        android:id="@+id/loginBtn"
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="LOGIN"/>
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="LOGIN" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
 
 </LinearLayout>
