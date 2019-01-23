@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backvw"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_details">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DESCRIPTION"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+            <TextView
+                android:id="@+id/recipe_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/name_description"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recipe_description"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:padding="@dimen/padding_layout"
+                android:onClick="ratingBarOnClicked"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top2"
+                android:text="@string/ingredient"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/favorite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ingredient"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:padding="@dimen/padding_layout"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/fats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/favorite"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top2"
+                android:text="@string/fats"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fibers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fats"
+                android:layout_marginLeft="@dimen/layout_margin_left"
+                android:layout_marginTop="@dimen/layout_margin_top"
+                android:padding="@dimen/padding_layout"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
