@@ -7,9 +7,13 @@
     android:background="@color/backvw"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_details">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -26,47 +30,44 @@
                 android:textAlignment="center"
                 android:textSize="25sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/favouriteBtn"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginRight="300dp"
+                android:onClick="fav"
+                android:src="@drawable/ic_favorite_border" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DESCRIPTION"
-                android:textStyle="bold"
-                android:textSize="20sp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"/>
-
-
+                android:layout_marginTop="5dp"
+                android:text="DESCRIPTION"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/recipe_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/layout_margin_left"
-                android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
                 android:text="@string/name_description"
                 android:textAlignment="center"
                 android:textSize="13sp" />
 
-            <RatingBar
-                android:id="@+id/rating_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/recipe_description"
-                android:layout_marginLeft="@dimen/layout_margin_left"
-                android:layout_marginTop="@dimen/layout_margin_top"
-                android:padding="@dimen/padding_layout"
-                android:onClick="ratingBarOnClicked"
-                android:textSize="20sp" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ingredients"
-                android:textStyle="bold"
-                android:textSize="15sp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                android:text="Ingredients"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/ingredient"
@@ -77,9 +78,8 @@
                 android:layout_marginTop="@dimen/layout_margin_top2"
                 android:text="@string/ingredient"
                 android:textAlignment="center"
-                android:textSize="25sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:id="@+id/favorite"
@@ -90,7 +90,6 @@
                 android:layout_marginTop="@dimen/layout_margin_top"
                 android:padding="@dimen/padding_layout"
                 android:textSize="20sp" />
-
 
             <TextView
                 android:id="@+id/fats"

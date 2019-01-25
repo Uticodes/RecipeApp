@@ -30,9 +30,10 @@
                     android:id="@+id/thumb_header"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fitsSystemWindows="true"
-                    app:layout_collapseMode="parallax"
                     android:scaleType="centerCrop" />
+
+
+
             </RelativeLayout>
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -45,5 +46,6 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
     <include layout="@layout/recipe_details"/>
+
 </android.support.design.widget.CoordinatorLayout>
 

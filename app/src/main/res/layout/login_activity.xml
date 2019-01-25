@@ -18,14 +18,19 @@
         android:id="@+id/loginMail"
         android:textColor="#FFFFFF"
         android:hint="Enter email"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColorHint="#931636"/>
 
     <EditText
         android:id="@+id/loginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
         android:hint="Enter Password"
         android:textColorHint="#931636" />
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -36,13 +41,9 @@
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
             android:textColor="#931636"
+            android:textStyle="bold"
             android:text="LOGIN" />
 
             </android.support.v7.widget.CardView>
-
-
-
-
-
 
 </LinearLayout>
