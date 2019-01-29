@@ -108,3 +108,7 @@ public static final String PREFERENCE_KEY_NAME = "favourite";
     private void initCollapsingToolbar() {
     }
 }
+
+
+
+

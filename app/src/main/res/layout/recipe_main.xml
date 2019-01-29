@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="@dimen/activity_vertical_margin"
-    android:background="#24D2BD"
+    android:background="#1bcf99"
     app:layout_behavior="com.google.material.appbar.AppBarLayout.ScrollingViewBehavior"
     tools:context="com.example.yutee.recipeapp.MainActivity"
     tools:showIn="@layout/activity_main">
